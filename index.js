@@ -64,38 +64,6 @@ const questions = [
   },
 ];
 
-// // TODO: Create a function to write README file
-// function writeToFile(fileName, data) {
-//   return fs.writeFileSync(path.join(process.cwd(), fileName), data);
-//   //   return fs.writFileSync(filename, data, function (err) {
-//   //     console.log(fileName);
-//   //     console.log(data);
-//   //     if (err) {
-//   //       return console.log(err);
-//   //     } else {
-//   //       console.log("success");
-//   //     }
-//   //   });
-// }
-
-// // TODO: Create a function to initialize app
-// function init() {
-//   inquirer.prompt(questions).then((responses) => {
-//     console.log("generateReadme");
-//     console.log(responses);
-//     writeToFile("READme.md", generateMarkdown({ ...responses }));
-//   });
-//   //   inquirer.prompt(questions).then(function (data) {
-//   //     writeToFile("README.md", generatorMarkdown(data));
-//   //     console.llog(data);
-//   //   });
-// }
-
-// // Function call to initialize app
-// init();
-
-// Imported required packages
-
 function writeToFile(fileName, data) {
   return fs.writeFileSync(path.join(process.cwd(), fileName), data);
 }
